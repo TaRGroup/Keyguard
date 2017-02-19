@@ -25,7 +25,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 
 /**
- * Created by Administrator on 2017/2/19.
+ * Created by Trumeet on 2017/2/19.
  * @author Trumeet
  */
 

@@ -36,7 +36,7 @@ import trumeet.keyguard.utils.MaskWindowUtils;
 import trumeet.keyguard.utils.Utils;
 
 /**
- * Created by Administrator on 2017/2/17.
+ * Created by Trumeet on 2017/2/17.
  * @author Trumeet
  */
 

@@ -96,11 +96,11 @@ public class MaskWindowUtils {
         WindowManager.LayoutParams wmParams = new WindowManager.LayoutParams();
         wmParams.type = WindowManager.LayoutParams.TYPE_SYSTEM_ERROR;
         wmParams.format = PixelFormat.TRANSPARENT;
-        wmParams.flags=WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD
+        wmParams.flags = WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD
                 | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
                 | WindowManager.LayoutParams.FLAG_LAYOUT_INSET_DECOR;
-        wmParams.width=WindowManager.LayoutParams.MATCH_PARENT;
-        wmParams.height= WindowManager.LayoutParams.MATCH_PARENT;
+        wmParams.width = WindowManager.LayoutParams.MATCH_PARENT;
+        wmParams.height = WindowManager.LayoutParams.MATCH_PARENT;
         mManager.addView(keyguardView, wmParams);
         mContext.startActivity(new Intent(mContext, KeyguardLiveActivity.class));
         return keyguardView;
@@ -127,7 +127,7 @@ public class MaskWindowUtils {
                 });
                 receiverUtil.subscribe(new IntentFilter(Intent.ACTION_SCREEN_ON));
                 if (mUsedTime == mTotalTime) {
-                    Log.w(TAG_TIMER, "Time Up, Resetting");
+                    Log.w(TAG_TIMER, "Time is Up, Resetting");
                     mUsedTime = 0;
                 }
                 for (; mUsedTime <= mTotalTime; mUsedTime++ ) {
@@ -148,7 +148,7 @@ public class MaskWindowUtils {
                     } catch (Exception ignore) {
                     }
                 }
-                Log.i(TAG_TIMER, "Time Up");
+                Log.i(TAG_TIMER, "Time is Up");
                 dismissKeyguardView();
                 receiverUtil.unsubscribe();
                 mPrefsUtil.onFinish(mScreenOn);
