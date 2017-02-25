@@ -1,6 +1,7 @@
 # Keyguard
 这是一个可以帮您定时锁机的应用
-#许可证
+
+# 许可证
 `GNU General Public License version 3`
 >Copyright (C) 2017 TaRGroup
 This program is *free software*: you can redistribute it and/or modify
@@ -9,7 +10,7 @@ You should have received a copy of the GNU General Public License
  along with this program.  If not, see
  http://www.gnu.org/licenses/
  
- #向开源致敬
+ # 向开源致敬
  MaterialDateTimePicker 
  > https://github.com/wdullaer/MaterialDateTimePicker
  
