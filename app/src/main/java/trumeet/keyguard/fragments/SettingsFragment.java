@@ -36,7 +36,7 @@ import trumeet.keyguard.utils.MaskWindowUtils;
 import trumeet.keyguard.utils.Utils;
 
 /**
- * Created by Administrator on 2017/2/17.
+ * Created by Trumeet on 2017/2/17.
  * @author Trumeet
  */
 
@@ -96,9 +96,15 @@ public class SettingsFragment extends PreferenceFragment {
                                 , "https://github.com/wdullaer/MaterialDateTimePicker"
                                 , "Copyright (c) 2015 Wouter Dullaert"
                                 , new ApacheSoftwareLicense20());
-
+                        Notice self = new Notice("KeyGuard"
+                        ,"https://github.com/TaRGroup/Keyguard"
+                        ,"Copyright (C) 2017 TaRGroup"
+                        ,new );
+                        //TODO:麻烦trumeet导入并在^上面^加一个GPLv3的license,我之前没用过这个库,不知道gpl许可证的模块名和gplv3的函数名是什么
+                        )
                         Notices notices = new Notices();
                         notices.addNotice(materialDateTimePicker);
+                        notices.addNotice(self);
                         LicensesDialog dialog = new LicensesDialog.Builder(getActivity())
                                 .setNotices(notices)
                                 .setIncludeOwnLicense(true)
